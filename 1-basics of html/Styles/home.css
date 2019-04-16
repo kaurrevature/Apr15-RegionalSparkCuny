@@ -1,0 +1,31 @@
+nav {
+    background-color:bisque;
+    font-size: 30px;
+    text-align: center  
+  }  
+  /* id selector */
+  #home{
+    color: brown;
+  }
+  /* Element selector */
+  body{
+      background-color: burlywood;
+  }
+p , li{
+    color: darkblue;
+}
+/* class selector */
+.client-side{
+    background-color: green;
+}
+.server-side{
+    background-color: coral;
+}
+/* Psuedo element */
+a:hover{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+
+
