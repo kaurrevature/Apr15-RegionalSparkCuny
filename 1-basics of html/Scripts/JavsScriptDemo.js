@@ -45,3 +45,8 @@ else{
     document.write("Sorry! your need to grow old to apply");
 }
 document.write("<br>after if block");
+
+var usernumber = prompt("Enter a number between 1 to 10");
+
+var randomenumber=Math.floor((Math.random()*10)+1);
+alert(randomenumber);
