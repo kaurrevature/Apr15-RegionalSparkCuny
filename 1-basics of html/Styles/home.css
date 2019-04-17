@@ -13,19 +13,40 @@ nav {
   }
 p , li{
     color: darkblue;
+    /* display: inline; */
+}
+li{
+    width: 30%;
 }
 /* class selector */
 .client-side{
     background-color: green;
+    display: inline-block;
 }
 .server-side{
     background-color: coral;
+    display: inline-block;
 }
 /* Psuedo element */
 a:hover{
     font-size: 40px;
     color: blueviolet;
 }
-
+.left{
+    display: inline-block;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block
+}
+/* BOX MODEL */
+img{
+    padding:10px;
+    border: solid;
+    margin-left: 30px;
+}
+a{
+    /* display: block;; */
+}
 
 

@@ -2,12 +2,15 @@
 <!-- Ctrl + K + C  -->
 <!Doctype Html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <!--Not a part of content-->
+  <!-- EXTERNAL STYLESHEET -->
   <link rel="stylesheet" href="../Styles/home.css">
+  <!-- INTERNAL STYLESHEET -->
   <style>
     /* comment */
     /* We write CSS Rules
@@ -15,12 +18,13 @@
             element, attribute, class, id, psuedoselectors(psuedo elements)
           Property: value
      */
-     /* body{
+    /* body{
       background-color:yellow;
      } */
   </style>
-  
+
 </head>
+
 <body>
   <!--This is the content-->
   <!-- <img src="C:\Revature\ProjectMyProfile\Images\mycat.jpg"
@@ -36,21 +40,26 @@
     <h1 style="text-align:center">Welcome to my home page</h1>
     <h6 title="Please see more info on my linkedIn account">My profile skill set is listed below</h6>
   </header>
-  <img title="Pushpinder Kaur" src="../Images/PushpinderKaur.jpg" width="200" height="200" alt="image not found">
-  <p>I am a corporate Trainer with .Net full stack skill set</p>
-  <p>The .Net technologies I work upon are:</p>
-  <ol>
-    <li class="client-side">Html</li>
-    <li class="client-side">CSS</li>
-    <li class="client-side">JavaScript</li>
-    <li class="server-side">C#</li>
-    <li class="server-side">DevOps</li>
-    <li class="server-side">Azure</li>
-  </ol>
+  <div class="left">
+    <img title="Pushpinder Kaur" src="../Images/PushpinderKaur.jpg" width="200" height="200" alt="image not found">
+  </div>
+  <div class="right">
+    <p>I am a corporate Trainer with .Net full stack skill set</p>
+    <p>The .Net technologies I work upon are:</p>
+    <ul>
+      <li class="client-side">Html</li>
+      <li class="client-side">CSS</li>
+      <li class="client-side">JavaScript</li>
+      <li class="server-side">C#</li>
+      <li class="server-side">DevOps</li>
+      <li class="server-side">Azure</li>
+    </ul>
+  </div>
   <footer>
     <h5>Connect with me on
       <a href="https://www.linkedin.com/feed/">LinkedIn</a>
     </h5>
   </footer>
 </body>
+
 </html>
