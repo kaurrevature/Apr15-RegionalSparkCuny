@@ -1,0 +1,8 @@
+span{
+    color:red;
+    font-size: small;
+    display: block
+}
+.imp{
+    display: inline;
+}
