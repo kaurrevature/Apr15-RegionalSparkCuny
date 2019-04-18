@@ -33,40 +33,62 @@
 //var z=30;
 //document.write(x==z && x==10);
 
+
+
 //CONDITIONALS
-debugger;
-var age=190;
-if(age>=16 && age <=100){
-    document.write("Congrats! You are eligible for driver's licenes");
-}
-else if(age>100){
-    document.write("you are too old to drive. Better prepare for funeral");
-}
-else{
-    document.write("Sorry! your need to grow old to apply");
-}
-document.write("<br>after if block");
 
-/*debugger;
+//functions
+function getMessage(firstname, lastname="test"){
+    debugger;
+    //return 'Hello '+firstname+' '+lastname;
+    //Template literals: string extrapolation
+    return `Hello ${firstname} ${lastname}`;
+}
+var msg=getMessage("Pushpinder");
+alert(msg);
+function calculateAge() {
+    var age = 190;
+    if (age >= 16 && age <= 100) {
+        document.write("Congrats! You are eligible for driver's licenes");
+    }
+    else if (age > 100) {
+        document.write("you are too old to drive. Better prepare for funeral");
+    }
+    else {
+        document.write("Sorry! your need to grow old to apply");
+    }
+    document.write("<br>after if block");
+}
+
+//calculateAge(); // Call to the Javascript
+
+//debugger;
 //Taking marks as in input from the user
-var score=prompt("Enter your marks for subject JavaScript");
-
-//declare a grade variable
-var grade;
-//specifying condition or expression looking for within the cases
-switch (true) {
-    case score>=90: //case1
-        grade='A';
-        break; //to avoid execution of next cases
-        case score>=70 && score<90://case2
-        grade='B';
-        break;
-        case score>=50 && score<70: //case3
-        grade='C';
-        break;
-    default://default case
-        grade='F';
-        break;
+function getMarks() {
+    var score = prompt("Enter your marks for subject JavaScript");
+    return score;
 }
-alert(grade)
-*/
+
+function getGrades(score) {
+    debugger;
+    //declare a grade variable
+    var grade;
+    //specifying condition or expression looking for within the cases
+    switch (true) {
+        case score >= 90: //case1
+        return grade = 'A';
+            break; //to avoid execution of next cases
+        case score >= 70 && score < 90://case2
+        return  grade = 'B';
+            break;
+        case score >= 50 && score < 70: //case3
+            return grade = 'C';
+            break;
+        default://default case
+        return grade = 'F';
+            break;
+    }
+}
+//var marks=getMarks();//Call to function returning a value and storing in
+//var grades=getGrades(marks);
+//alert(grades);
