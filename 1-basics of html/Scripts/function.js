@@ -76,8 +76,8 @@ function printNaturalNumbers(limit){
         //document.write(i);
     }
 }
-//Global variables: outside function, or without var keyword
+//Global variables: variables created outside function, or without var keyword
 printNaturalNumbers(5);
 //document.write(j);
 //Scope: life time of a variable
-document.write(i);//global variable
+//document.write(i);//global variable
