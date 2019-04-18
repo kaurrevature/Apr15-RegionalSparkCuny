@@ -43,7 +43,7 @@ function getMessage(firstname, lastname="test"){
 }
 //var msg=getMessage("Pushpinder");
 //alert(msg);
-function calculateAge() {
+function checkEligibilty() {
     var age = 190;
     if (age >= 16 && age <= 100) {
         document.write("Congrats! You are eligible for driver's licenes");
@@ -57,7 +57,8 @@ function calculateAge() {
     document.write("<br>after if block");
 }
 
-//calculateAge(); // Call to the Javascript
+function checkEligibilty() {
+    //calculateAge(); // Call to the Javascript
 
 //debugger;
 //Taking marks as in input from the user
@@ -88,4 +89,4 @@ function getGrades(score) {
 }
 //var marks=getMarks();//Call to function returning a value and storing in
 //var grades=getGrades(marks);
-//alert(grades);
+//alert(grades)
