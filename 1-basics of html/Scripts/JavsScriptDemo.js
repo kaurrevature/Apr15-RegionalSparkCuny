@@ -32,9 +32,6 @@
 //Logical operators (&&, ||, !)
 //var z=30;
 //document.write(x==z && x==10);
-
-
-
 //CONDITIONALS
 
 //functions
@@ -44,8 +41,8 @@ function getMessage(firstname, lastname="test"){
     //Template literals: string extrapolation
     return `Hello ${firstname} ${lastname}`;
 }
-var msg=getMessage("Pushpinder");
-alert(msg);
+//var msg=getMessage("Pushpinder");
+//alert(msg);
 function calculateAge() {
     var age = 190;
     if (age >= 16 && age <= 100) {
