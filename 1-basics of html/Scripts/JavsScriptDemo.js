@@ -11,8 +11,8 @@
 //console.log(a);//display value on console of developer tools
 //document.write(a);//displays value on page
 
-var x;
-x= 10;//"10"; //true
+//var x;
+//x= 10;//"10"; //true
 //document.write(typeof(x));
 
 //OPERATORS: 
@@ -26,15 +26,16 @@ x= 10;//"10"; //true
 //document.write(x);
 
 //Comparison (==, ===, !=, <, >, <=, >=)
-var y="10";
+//var y="10";
 //document.write(x!==y);
 
 //Logical operators (&&, ||, !)
-var z=30;
+//var z=30;
 //document.write(x==z && x==10);
 
 //CONDITIONALS
-/*var age=190;
+debugger;
+var age=190;
 if(age>=16 && age <=100){
     document.write("Congrats! You are eligible for driver's licenes");
 }
@@ -45,5 +46,27 @@ else{
     document.write("Sorry! your need to grow old to apply");
 }
 document.write("<br>after if block");
-*/
 
+/*debugger;
+//Taking marks as in input from the user
+var score=prompt("Enter your marks for subject JavaScript");
+
+//declare a grade variable
+var grade;
+//specifying condition or expression looking for within the cases
+switch (true) {
+    case score>=90: //case1
+        grade='A';
+        break; //to avoid execution of next cases
+        case score>=70 && score<90://case2
+        grade='B';
+        break;
+        case score>=50 && score<70: //case3
+        grade='C';
+        break;
+    default://default case
+        grade='F';
+        break;
+}
+alert(grade)
+*/
