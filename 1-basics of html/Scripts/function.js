@@ -77,7 +77,21 @@ function printNaturalNumbers(limit){
     }
 }
 //Global variables: variables created outside function, or without var keyword
-printNaturalNumbers(5);
+//printNaturalNumbers(5);
 //document.write(j);
 //Scope: life time of a variable
 //document.write(i);//global variable
+
+//Anonymous functions: without any name
+// var afunc= function(){
+//     alert('Hi Calling from anonymous function');
+// }
+//afunc();
+//Self-invoked functions: afunction which declared and called immediately by itself
+// (function(){
+//     alert('Hi Calling from anonymous function');
+// })();
+//anonymous and self invoked function with a parameter
+(function(a,b){
+    alert(`Sum of ${a} and ${b} is ${a+b}`);
+})(5,10);

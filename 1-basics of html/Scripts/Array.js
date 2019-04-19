@@ -17,9 +17,9 @@ student[4]="Julie";
     console.log(student[i]);
 }*/
 // for in loop
-// for (var s in student) {
-//     console.log(student[s]);
-// }
+for (var s in student) {
+    document.write(s+" - "+student[s]+"<br>");
+}
 
 /*for(var i=student.length-1;i>=0;i--)
 {
@@ -31,12 +31,19 @@ for (var i = 0; i < marks.length; i++) {
     console.log(marks[i]);
     
 }*/
+//2. using Array parameterized constructors
+
+ //var students=new Array("a","b","c","d","e");
 //3. using Array Notation
-var associates=["a1","a2","a3","a4"];
+var associates=[];// declare the array
+associates=["a1","a2","a3","a4"];// assign the values
 for(var i=0;i<associates.length;i++)
 {
     console.log(associates[i]);
 }
+associates.forEach(element => {
+    document.write(element+"<br>");
+});
 
 //1. Activity to copy items from arr1 to arr2
 //2. arrange elements of arr2 in ascending order
