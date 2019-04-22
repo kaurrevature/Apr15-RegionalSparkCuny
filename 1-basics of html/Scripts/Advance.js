@@ -31,6 +31,7 @@ function Print(){
     var lname=document.getElementById("lname").value;
     var email=document.getElementById('email').value;
     var gender=document.getElementsByName('gender');
+    var print=document.getElementById("print");
     var genderselected;
     for(var i=0; i<gender.length;i++){
         if(gender[i].checked==true)
@@ -39,5 +40,14 @@ function Print(){
         }
     }
     
-    alert(`${fname} ${lname} ${email} ${genderselected}`);
+   // alert(`${fname} ${lname} ${email} ${genderselected}`);
+   var details=[];
+   details.push(fname);
+   details.push(lname);
+   details.push(email);
+   details.push(genderselected);
+   details.forEach(e => {
+    print.innerHTML=`<li>${e}</li>`;
+   });
+
 }
