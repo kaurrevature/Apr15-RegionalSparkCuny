@@ -47,7 +47,11 @@ function Print(){
    details.push(email);
    details.push(genderselected);
    details.forEach(e => {
-    print.innerHTML=`<li>${e}</li>`;
+       debugger;
+       var li=document.createElement("li");
+       var liText=document.createTextNode(e);   
+       li.appendChild(liText);
+       print.appendChild(li);
    });
 
 }
