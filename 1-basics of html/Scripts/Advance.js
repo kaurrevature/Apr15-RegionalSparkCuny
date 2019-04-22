@@ -30,27 +30,33 @@ function Print(){
     var fname=document.getElementById("fname").value;
     var lname=document.getElementById("lname").value;
     var email=document.getElementById('email').value;
+    //returns array of items with name gender
     var gender=document.getElementsByName('gender');
-    var print=document.getElementById("print");
     var genderselected;
+    //iterate for the gender array
     for(var i=0; i<gender.length;i++){
         if(gender[i].checked==true)
         {
             genderselected=gender[i].value;
         }
     }
-    
-   // alert(`${fname} ${lname} ${email} ${genderselected}`);
+    //get reference of <ul id="print"></ul>
+    var print=document.getElementById("print"); 
+    // alert(`${fname} ${lname} ${email} ${genderselected}`);
    var details=[];
+   //Add all form details in the array
    details.push(fname);
    details.push(lname);
    details.push(email);
    details.push(genderselected);
    details.forEach(e => {
-       debugger;
-       var li=document.createElement("li");
+    //create <li> </li>   node
+    var li=document.createElement("li");
+    //Add text node to <li> textNode </li>
        var liText=document.createTextNode(e);   
+       //tie the text node to the <li></li>
        li.appendChild(liText);
+       //tie all <li></li> to <ul id="print"></ul>
        print.appendChild(li);
    });
 
