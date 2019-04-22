@@ -14,7 +14,7 @@
 
 <body>
     <!-- <button id="btn" onclick="clickme();">Click Me</button> -->
-    <form >
+    <form>
         <fieldset>
             <legend>Basic Details</legend>
             <table>
@@ -42,12 +42,29 @@
                         <span>*</span>
                     </td>
                     <td>
-                        <input type="email" id="email" name="email">
+                        <input type="email" required id="email" name="email">
                     </td>
                 </tr>
                 <tr>
-                    <td><button id="btnDisplay">Display</button></td>
+                    <td>
+                        <label for="gender">Gender</label>
+                        <span>*</span>
+                    </td>
+                    <td>
+                        <input type="radio" required id="male" name="gender" value="male">Male
+                        <input type="radio" id="female" name="gender" value="female">Female
+                        <input type="radio" id="others" name="gender" value="others">Others
+                    </td>
                 </tr>
+                <tr>
+                        <td>
+                            <!-- <button onclick="display();" id="btnDisplay">Display</button> -->
+                            <button id="btnDisplay">Display</button>
+                        </td>
+                    </tr>
+                <div id="displayname"></div>
+                <ul id="print">
+                </ul>
             </table>
             <br>
         </fieldset>
