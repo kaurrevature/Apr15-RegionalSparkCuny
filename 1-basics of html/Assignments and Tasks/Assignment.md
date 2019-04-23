@@ -1,4 +1,4 @@
-#Assignment- suggested requirements:
+# Assignment- suggested requirements:
 ## Valid HTML markup (use an HTML validator to confirm) using at least 20 different HTML tags
 - Must have at least 1 form on the page
 - Must have at least 1 image/image
