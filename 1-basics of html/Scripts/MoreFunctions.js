@@ -124,4 +124,4 @@ function palindrome(str) {
         isPalindrome=false;    
     return isPalindrome;
 }
-console.log(palindrome('samosa'));
+console.log(palindrome('samosa');
