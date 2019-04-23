@@ -96,7 +96,7 @@ function reverseStringtoCharArr(str) {
         if (str[i] != '\' ' && str[i] != " " && str[i] != ',' && str[i] != '.') {
             char2.push(str[i].toLowerCase());
         }
-    }
+    } 
     console.log(char2.toString());// print the reverse of string.
     return char2;
 }
@@ -107,23 +107,21 @@ function palindrome(str) {
     var falseCounter=0;
     char1 = stringtoCharArr(str);
     char2 = reverseStringtoCharArr(str);
-    debugger;
     if (char1.length == char2.length) {
         for (let i = 0; i < char1.length; i++) {
-            for (let j = 0; j < char2.length; j++) {
-                if(char1[i]==char2[j])
+                if(char1[i]==char2[i])
                 {
                     isPalindrome=true;
                 }   
                 else {
+                    debugger;
                     isPalindrome=false;
                     falseCounter++;
-                }             
-            }            
+                }                        
         }
     }
     if(falseCounter>0)
         isPalindrome=false;    
     return isPalindrome;
 }
-console.log(palindrome('A man, a plan, a canal. Panama'));
+console.log(palindrome('samosa'));
