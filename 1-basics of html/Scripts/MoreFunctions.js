@@ -79,34 +79,32 @@ function fibonacci(num) {
 console.log(fibonacci(2));
 
 function stringtoCharArr(str) {
-    debugger;
     let char1 = [];
-
     for (let i = 0; i < str.length; i++) {
-        if (str[i] != ' ' && str[i] != " " && str[i] != ',' && str[i] != '.') {
+        //check if string has punctuations
+        if (str[i] != '\' ' && str[i] != " " && str[i] != ',' && str[i] != '.') {
             char1.push(str[i].toLowerCase());
         }
     }
-    console.log(char1.toString());
+    console.log(char1.toString());//to test if string get rid of punctuations
     return char1;
 }
 function reverseStringtoCharArr(str) {
-    debugger;
     let char2 = [];
 
     for (let i = str.length - 1; i >= 0; i--) {
-        if (str[i] != ' ' && str[i] != " " && str[i] != ',' && str[i] != '.') {
+        if (str[i] != '\' ' && str[i] != " " && str[i] != ',' && str[i] != '.') {
             char2.push(str[i].toLowerCase());
         }
     }
-    console.log(char2.toString());
+    console.log(char2.toString());// print the reverse of string.
     return char2;
 }
 function palindrome(str) {
     let char1 = [];
     let char2 = [];
-    isPalindrome=false;
-    falseCounter=0;
+    var isPalindrome=false;
+    var falseCounter=0;
     char1 = stringtoCharArr(str);
     char2 = reverseStringtoCharArr(str);
     debugger;
@@ -121,14 +119,11 @@ function palindrome(str) {
                     isPalindrome=false;
                     falseCounter++;
                 }             
-            }
-            
+            }            
         }
     }
-    if(false>0)
-    isPalindrome=false;    
+    if(falseCounter>0)
+        isPalindrome=false;    
     return isPalindrome;
 }
-
-
 console.log(palindrome('A man, a plan, a canal. Panama'));
