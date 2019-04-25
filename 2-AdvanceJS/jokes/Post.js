@@ -12,6 +12,7 @@ function getPosts(){
     })
     .then((res)=>res.json())
     .then((data)=>updateDOM(data))
+    .catch((err)=>alert(err))
 }
 
 function SendPosts(){
@@ -21,10 +22,10 @@ var body= document.getElementById('body').value;
     fetch(url,{
         method:'Post',
         headers:{
-          'Accept':'application/json application/xml',
-          'Content-type':'application/json'
+          'Accept':'application/json application/xml',//this is what we expect
+          'Content-type':'application/json'// this is what we send
         },
-        body: JSON.stringify({title:title,body:body})
+        body: JSON.stringify({title:title,body:body})//this is the data sent in JSON string form
     })
     .then((res)=>res.json())
     .then((data)=>console.log(data))
